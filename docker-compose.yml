@@ -1,0 +1,16 @@
+services:
+  memora:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - PRIMARY_MODEL=${PRIMARY_MODEL:-google/gemma-3-12b-it}
+      - UTILITY_MODEL=${UTILITY_MODEL:-google/gemma-3-12b-it}
+      - STORE_PATH=/app/store
+    volumes:
+      - memora_store:/app/store
+    restart: unless-stopped
+
+volumes:
+  memora_store:

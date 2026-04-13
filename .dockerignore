@@ -1,0 +1,17 @@
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+.venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.claude
+store/chroma_db
+store/episodic.db
+*.egg-info
+README.md
+Dockerfile
+docker-compose.yml
+.dockerignore
