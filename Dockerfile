@@ -28,6 +28,7 @@ RUN mkdir -p /app/store
 
 ENV STORE_PATH=/app/store
 ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app
 
 EXPOSE 8501
 
