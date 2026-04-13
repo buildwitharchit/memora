@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.env
+store/chroma_db/
+store/*/
+!store/.gitkeep
+.venv/
+*.egg-info/
+.pytest_cache/
